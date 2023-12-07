@@ -1,0 +1,20 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "A case for using GitHub"
+  chapters:
+    - index.qmd
+    - open_code.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+editor: visual
+

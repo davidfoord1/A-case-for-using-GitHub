@@ -1,0 +1,41 @@
+# A case for Open Code {.unnumbered}
+
+## Why publish your code?
+
+From the [NHS Digital RAP Community of practice](https://nhsdigital.github.io/rap-community-of-practice/implementing_RAP/how-to-publish-your-code-in-the-open/ "How to Publish your Code in the Open"):
+
+> The Government's [Digital Service Standard](https://www.gov.uk/service-manual/service-standard) 12th principle states that all publicly funded code should be open, reusable and available under appropriate licences. The main benefits of publishing your code are:
+>
+> -   It increases transparency on NHS work. This can include publication/dashboard methodologies, but also code ownership.
+>
+> -   It increases collaboration and knowledge sharing across cross-department teams, external users and developers. No time is wasted on requesting permissions or access to code repositories.
+>
+> -   Easier to share and align on standards across the health sector.
+>
+> -   Knowing that your code will be published will lead to your overall code health increasing as analysts and developers will take greater care in ensuring best coding practices and standards are applied.
+>
+> -   Reduce burden by sharing and reusing code. Internal and external users can learn from your code repositories and templates, and apply it to their work or personal projects.
+
+## What about security?
+
+[Government guidance on when code should be open or closed](https://www.gov.uk/government/publications/open-source-guidance/when-code-should-be-open-or-closed):
+
+> **Closed code**
+>
+> You should keep some data and code closed, including:
+>
+> -   keys and credentials
+> -   algorithms used to detect fraud
+> -   unreleased policy
+
+> **Open code**
+>
+> You should open all other code. This includes:
+>
+> -   configuration code
+> -   database schema
+> -   security-enforcing code
+
+## Other
+
+[Office of National Statistics guidance on Coding in the Open](https://datasciencecampus.github.io/coding-in-the-open/) reiterates the NHS Digital position.
