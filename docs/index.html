@@ -72,7 +72,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">What is GitHub, anyway?</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Why you should be using GitHub</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -100,7 +100,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">What is GitHub, anyway?</span></a>
+ <span class="menu-text">Why you should be using GitHub</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -119,7 +119,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#what-is-github-anyway" id="toc-what-is-github-anyway" class="nav-link active" data-scroll-target="#what-is-github-anyway">What is GitHub, anyway?</a>
+  <li><a href="#why-you-should-be-using-github" id="toc-why-you-should-be-using-github" class="nav-link active" data-scroll-target="#why-you-should-be-using-github">Why you should be using GitHub</a>
+  <ul class="collapse">
+  <li><a href="#what-is-github-anyway" id="toc-what-is-github-anyway" class="nav-link" data-scroll-target="#what-is-github-anyway">What is GitHub, anyway?</a>
   <ul class="collapse">
   <li><a href="#that-sounds-like-a-lot-of-extra-steps-just-to-save-my-work" id="toc-that-sounds-like-a-lot-of-extra-steps-just-to-save-my-work" class="nav-link" data-scroll-target="#that-sounds-like-a-lot-of-extra-steps-just-to-save-my-work">That sounds like a lot of extra steps just to save my work…</a></li>
   <li><a href="#github-for-reproducible-analytical-pipelines-rap" id="toc-github-for-reproducible-analytical-pipelines-rap" class="nav-link" data-scroll-target="#github-for-reproducible-analytical-pipelines-rap">GitHub for Reproducible Analytical Pipelines (RAP)</a></li>
@@ -128,11 +130,10 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#getting-to-grips-with-the-tools" id="toc-getting-to-grips-with-the-tools" class="nav-link" data-scroll-target="#getting-to-grips-with-the-tools">Getting to grips with the tools</a></li>
   </ul></li>
-  <li><a href="#further-thoughts" id="toc-further-thoughts" class="nav-link" data-scroll-target="#further-thoughts">Further thoughts</a>
+  <li><a href="#the-drive-and-support-in-government-and-the-nhs" id="toc-the-drive-and-support-in-government-and-the-nhs" class="nav-link" data-scroll-target="#the-drive-and-support-in-government-and-the-nhs">The drive and support in government and the NHS</a>
   <ul class="collapse">
-  <li><a href="#there-is-a-lot-of-support-for-using-git" id="toc-there-is-a-lot-of-support-for-using-git" class="nav-link" data-scroll-target="#there-is-a-lot-of-support-for-using-git">There is a lot of support for using Git!</a></li>
-  <li><a href="#onedrive-is-not-the-version-control-youre-looking-for" id="toc-onedrive-is-not-the-version-control-youre-looking-for" class="nav-link" data-scroll-target="#onedrive-is-not-the-version-control-youre-looking-for">OneDrive is not the version control you’re looking for</a></li>
-  <li><a href="#other-github-features" id="toc-other-github-features" class="nav-link" data-scroll-target="#other-github-features">Other GitHub features</a></li>
+  <li><a href="#github-and-the-nhs-so-far" id="toc-github-and-the-nhs-so-far" class="nav-link" data-scroll-target="#github-and-the-nhs-so-far">GitHub and the NHS so far</a></li>
+  </ul></li>
   </ul></li>
   </ul>
 </nav>
@@ -157,25 +158,40 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>A(nother) case for using GitHub, from the perspective of an NHS England Cancer analyst.</p>
-<section id="what-is-github-anyway" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="what-is-github-anyway">What is GitHub, anyway?</h2>
-<p><a href="https://github.com/">GitHub.com</a> and GitHub are a suite of products centered around the <strong>version control system</strong> <a href="https://www.bing.com/ck/a?!&amp;&amp;p=d931a2ebfd59a00eJmltdHM9MTcwMTgyMDgwMCZpZ3VpZD0xYTFjOTJhOC00Y2I2LTZkZDctMGY1ZS04MDZkNGQwZDZjNzYmaW5zaWQ9NTUyNQ&amp;ptn=3&amp;ver=2&amp;hsh=3&amp;fclid=1a1c92a8-4cb6-6dd7-0f5e-806d4d0d6c76&amp;psq=git&amp;u=a1aHR0cHM6Ly9naXQtc2NtLmNvbS9kb3dubG9hZHM&amp;ntb=1">Git</a>. It offers:</p>
+<section id="why-you-should-be-using-github" class="level1 unnumbered">
+<h1 class="unnumbered">Why you should be using GitHub</h1>
+<p>A(nother) case for using GitHub for data analysis projects, from the perspective of an NHS England data analyst. My team started to transition projects on to GitHub last year, and this is why I’m glad we did.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+The Goal
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Use a service like GitHub to share what you’ve done and how you’ve done it, so that you, your colleagues and others can repeat the process. Share your code and documentation, <em>not the data</em> or even the results (as they of course may be sensitive).</p>
+</div>
+</div>
+<section id="what-is-github-anyway" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-github-anyway">What is GitHub, anyway?</h2>
+<p><a href="https://github.com/">GitHub</a> is a suite of products centered around the <strong>version control system</strong> <a href="https://www.bing.com/ck/a?!&amp;&amp;p=d931a2ebfd59a00eJmltdHM9MTcwMTgyMDgwMCZpZ3VpZD0xYTFjOTJhOC00Y2I2LTZkZDctMGY1ZS04MDZkNGQwZDZjNzYmaW5zaWQ9NTUyNQ&amp;ptn=3&amp;ver=2&amp;hsh=3&amp;fclid=1a1c92a8-4cb6-6dd7-0f5e-806d4d0d6c76&amp;psq=git&amp;u=a1aHR0cHM6Ly9naXQtc2NtLmNvbS9kb3dubG9hZHM&amp;ntb=1">Git</a>. It offers:</p>
 <ul>
-<li><p>A place to store and share projects (in repositories) with complete control over who has access. It’s easy to download a copy of a project, make changes and upload a revision. It’s a back-up on the cloud.</p></li>
-<li><p>It keeps a full record of changes made to the repository, including who made them and when, great for recovery, audits or just understanding how the project changed over time.</p></li>
-<li><p>When you make changes, save them and commit them to a repository, you can (and should) give a descriptive name to the change which makes it easy for others to understand what changes have been made.</p></li>
-<li><p>Git supports multiple branches of one project being worked on in parallel. You can work separately on features and combine them. By having a distinct final/publishing branch, say <code>main</code>, you can protect the quality and completeness of the output product.</p></li>
-<li><p>A key feature of the GitHub workflow are <strong>Pull Requests</strong> and <strong>Code Reviews</strong>. When you’re happy with a change and want it merged into the <code>main</code> branch, you can make a request for someone to pull/merge your own branch into <code>main</code>. This can then be peer reviewed by someone, who can add comments, request changes or approve and merge. This is really important, because it adds a natural step for communication and assurance into the process.</p></li>
+<li><p><strong>A place to store and share projects</strong>, in repositories with complete control over who has access. It’s easy to download a copy of a project, make changes and upload a revision. It’s a shared source-of-truth on the cloud.</p></li>
+<li><p><strong>A record of changes made to the repository</strong>, including who made them and when; great for recovery, audits or just understanding how the project changed over time. You name and describe changes so that it’s easy to understand what’s been done.</p></li>
+<li><p><strong>Multiple branches of one project being worked on in parallel</strong>. You can work safely and separately on features and combine them. By having a distinct final/publishing branch (usually <code>main</code>), you can protect the quality and completeness of the output product.</p></li>
+<li><p><strong>Peer review in your regular workflow</strong>. Pull Requests and Code Reviews are key features. When you’re happy with a change you’ve made in a branch, you can make a request for your work to be pulled/merged into the <code>main</code> branch. This can then be reviewed by someone, who can add comments, request changes or approve and merge. This is really valuable, because it adds a natural step for feedback and quality assurance into the process.</p></li>
 </ul>
+<p>All of that is available for <strong>FREE</strong>, and that’s not everything<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, but hopefully it is enough to pique your interest.</p>
 <section id="that-sounds-like-a-lot-of-extra-steps-just-to-save-my-work" class="level3">
 <h3 class="anchored" data-anchor-id="that-sounds-like-a-lot-of-extra-steps-just-to-save-my-work">That sounds like a lot of extra steps just to save my work…</h3>
-<p>Well, yes, it is. It’s saving, but more deliberate, with more quality assurance built-in, records for recovery and audit, proper support for multiple branches of work. It is a longer process; it’s a more thoughtful process; it’s a better process. Well, no it’s not even a longer process, it takes more time up front but saves a lot over the mid-to-long-term. I don’t think I can stress enough how beneficial the extra steps are.</p>
-<p>I’m not going to go through every reason <a href="https://nhsdigital.github.io/rap-community-of-practice/introduction_to_RAP/why_RAP_is_important/">why reproducible analytical pipeline are important</a>, but quickly; the more manual steps like copy-pasting in a process there are, the more time it will take to complete, the more risk there will be for error, and the less scalable it will be for extending and repeating the process. It’s good to automate as much as possible, and products like GitHub go hand-in-hand with tackling these issues:</p>
+<p>Well, yes, it is. It’s saving, but more deliberate, with more quality assurance built-in, records for recovery and audit, proper support for multiple branches of work. It is a longer process; it’s a more thoughtful process; it’s a better process. In fact, it’s not a longer process, it takes more time up front but saves a lot over the mid-to-long-term. I don’t think I can stress enough how beneficial the extra steps are, particularly in making your work reproducible.</p>
 </section>
 <section id="github-for-reproducible-analytical-pipelines-rap" class="level3">
 <h3 class="anchored" data-anchor-id="github-for-reproducible-analytical-pipelines-rap">GitHub for Reproducible Analytical Pipelines (RAP)</h3>
-<p>From the NHS Digital <a href="https://nhsdigital.github.io/rap-community-of-practice/introduction_to_RAP/levels_of_RAP/">levels of RAP framework</a>, which sets out a list of requirements for making a good pipeline, look at the <em>baseline</em> points:</p>
+<p>As a summary of <a href="https://nhsdigital.github.io/rap-community-of-practice/introduction_to_RAP/why_RAP_is_important/">why reproducible pipelines are important</a>: the more manual steps like copy-pasting in a process there are, the more time it will take to complete, the more risk there will be for error, and the less scalable it will be for extending and repeating the process. It’s good to automate as much as possible, and products like GitHub go hand-in-hand with tackling these issues:</p>
+<p>From the NHS Digital <a href="https://nhsdigital.github.io/rap-community-of-practice/introduction_to_RAP/levels_of_RAP/">levels of RAP framework</a>, which sets out a list of requirements for making a good pipeline, look at the <em>baseline</em> (bronze) points:</p>
 <blockquote class="blockquote">
 <ul>
 <li><p>Code is version controlled (see <a href="https://nhsdigital.github.io/rap-community-of-practice/training_resources/git/introduction-to-git/">Git basics</a> and <a href="https://nhsdigital.github.io/rap-community-of-practice/training_resources/git/using-git-collaboratively/">using Git collaboratively</a> guides).</p></li>
@@ -190,17 +206,18 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="thats-great-in-theory-but-what-its-like-in-practice" class="level2">
 <h2 class="anchored" data-anchor-id="thats-great-in-theory-but-what-its-like-in-practice">That’s great in theory, but what it’s like in practice?</h2>
-<p>My team started moving some projects on to GitHub a few months ago and I am so glad that we did.</p>
+<p>Like I said, I’m really glad the team I’m in started making this move -</p>
 <ul>
-<li><p>Now we can safely collaborate on the same file, in ways that are not possible with OneDrive/SharePoint. It’s easy to work on something in your own branch without worrying about messing the real thing up, and then it’s easy to merge files and understand what’s actually happening.</p></li>
+<li><p>Now we can collaborate much more safely, in ways that were not possible with our previous setup using OneDrive/SharePoint. It’s easy to work on something in your own branch without worrying about messing the real thing up, and then it shows you the exact differences when you want to combine on them.</p></li>
 <li><p>Introducing <strong>code review has been a boon for learning</strong> in the team. We’re not just getting things done well enough to work. We’re getting feedback, we’re improving, we’re making things more maintainable. This comes from both getting your code reviewed and from doing the reviewing.</p></li>
-<li><p>Code review has also managed to catch a few mistakes before they got moved into a final product.</p></li>
-<li><p>In a case where a change didn’t work, we were able to simply able to revert it.</p></li>
-<li><p>It has been quick and easy to transfer files to different people and different locations like remote desktops.</p></li>
+<li><p>Code review has managed to catch a few mistakes before they got moved into building a project.</p></li>
+<li><p>In a case where a change didn’t work in practice, we were able to revert it.</p></li>
+<li><p>It has been quick and easy to get code running for different people and on different locations like remote desktops.</p></li>
 </ul>
+<p>That being said, although the differences are clearly set out, conflicts can arise and resolving them scales in difficulty with the complexity of the changes. So, it’s still generally recommended to have only one branch work on one file at a time.</p>
 <section id="getting-to-grips-with-the-tools" class="level3">
 <h3 class="anchored" data-anchor-id="getting-to-grips-with-the-tools">Getting to grips with the tools</h3>
-<p>There was a bit of learning and setting up to do to get started, but plenty of guides on how to do it. Using Git in a command line app (like Git Bash for Windows) may seem a bit intimidating, but there are graphical user interface apps like GitHub Desktop which makes things easier. It is also commonly included in IDEs like RStudio, and packages like <a href="https://usethis.r-lib.org/reference/index.html#git-and-github">{usethis}</a> for R.</p>
+<p>There was a bit of learning and setting up to do to get started, but plenty of guides on how to do it. There are lots of tools to potentially use, the most friendly being apps like <a href="https://desktop.github.com/">GitHub Desktop</a>, or perhaps the integrated functionality in development environments like <a href="https://code.visualstudio.com/docs/sourcecontrol/intro-to-git" title="Intro to Git in VSCode">VSCode</a>. Best is to just pick one that seems comfortable to you, find the relevant documentation and guidance, and then run with it.</p>
 <p>Once you get the hang of if it, there is a fairly simple and consistent rhythm of creating feature branches, making/saving/committing changes to files, pulling from the main branch and pushing to the feature branch, before submitting for review.</p>
 <p><strong>It’s easy to see where changes have been made</strong></p>
 <p>When a commit is made the exact changes are recorded, which can be displayed in various ways, usually with a <code>+</code> for added lines and <code>-</code> for removed lines. Being so explicit with the changes is the main reason why merging different changes together is made so easy, because you know exactly what is happening.</p>
@@ -212,36 +229,35 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </section>
 </section>
-<section id="further-thoughts" class="level2">
-<h2 class="anchored" data-anchor-id="further-thoughts">Further thoughts</h2>
-<section id="there-is-a-lot-of-support-for-using-git" class="level3">
-<h3 class="anchored" data-anchor-id="there-is-a-lot-of-support-for-using-git">There is a lot of support for using Git!</h3>
-<p>The HM Treasury <a href="https://assets.publishing.service.gov.uk/media/5a7f3bb8e5274a2e87db49be/aqua_book_final_web.pdf" title="guidance on producing quality analysis for government">Aqua Book</a> recommends version control as the most basic quality assurance activity appropriate even for simple analysis with low business risk (see section 4.1.13 onward). The Government Analysis Function’s best practice guidance includes a <a href="https://best-practice-and-impact.github.io/qa-of-code-guidance/version_control.html#">Guide to Version Control with Git</a> and a <a href="https://best-practice-and-impact.github.io/qa-of-code-guidance/version_control.html">Peer Review Guide</a>.</p>
-<p>Some examples of GitHub in use:</p>
+<section id="the-drive-and-support-in-government-and-the-nhs" class="level2">
+<h2 class="anchored" data-anchor-id="the-drive-and-support-in-government-and-the-nhs">The drive and support in government and the NHS</h2>
+<p>The <a href="https://www.gov.uk/government/publications/better-broader-safer-using-health-data-for-research-and-analysis/better-broader-safer-using-health-data-for-research-and-analysis">Goldacre review</a> goes in to quite some (non-technical) detail on why reproducible pipelines are a great opportunity for improvement in NHS analytical work. It recommends the adoption of RAP practices as the default:</p>
+<blockquote class="blockquote">
+<p>it is crucial that the core working practices, such as sharing code, are implemented as a norm throughout the system, because of the problems that closed working can create around quality, safety, usability, credibility, and review.</p>
+</blockquote>
+<p>The review stresses the importance of tools and services like GitHub<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> to meet the minimum requirements of data pipelines being shared openly to anyone for review and re-use with an audit trail using version control.</p>
+<p>The same is said in many places, here are some others in additions to the the NHS Digital resources already shared:</p>
 <ul>
-<li><p><a href="https://github.com/nhsengland">NHS England GitHub</a></p></li>
-<li><p><a href="https://github.com/nhsdigital">NHS Digital GitHub</a></p></li>
-<li><p><a href="https://github.com/nhsuk">NHS UK GitHub</a></p></li>
-<li><p><a href="https://github.com/alphagov">Government Digital Service</a></p></li>
-<li><p><a href="https://github.com/ONSdigital">ONS GitHub</a></p></li>
+<li><p>The <a href="https://www.gov.uk/service-manual/technology/making-source-code-open-and-reusable" title="Making source code open and reusable">GOV.UK Service Manual</a> advises making code publicly available in an open internet source code repository.</p></li>
+<li><p>The Government Analysis Function’s best practice guidance includes a <a href="https://best-practice-and-impact.github.io/qa-of-code-guidance/version_control.html#">Guide to Version Control with Git</a> and a <a href="https://best-practice-and-impact.github.io/qa-of-code-guidance/version_control.html">Peer Review Guide</a>.</p></li>
+<li><p>The Office of National Statistics <a href="https://datasciencecampus.github.io/coding-in-the-open/" title="ONS Data Science Campus - Coding in the Open">reiterates the NHS Digital position</a>.</p></li>
 </ul>
-</section>
-<section id="onedrive-is-not-the-version-control-youre-looking-for" class="level3">
-<h3 class="anchored" data-anchor-id="onedrive-is-not-the-version-control-youre-looking-for">OneDrive is not the version control you’re looking for</h3>
-<p>Having files reliant on Microsoft OneDrive/Sharepoint syncing and version history is risky and makes me nervous. I’ve seen files be deleted at random fairly regularly.</p>
-<p>Writing code includes things like installing code packages, lots of small files to contribute to a project and OneDrive will try to sync them. It’s not unusual to see it whirring away trying to process thousands of changes and painfully slowing things down.</p>
-<p>Autosave is great for emergency recovery on a crash, but the history is no good for more precise recovery and reversion. It does mean you don’t have to worry about forgetting to save, but that’s about as far as it goes, and as already discussed, deliberate and described changes are good practice.</p>
-</section>
-<section id="other-github-features" class="level3">
-<h3 class="anchored" data-anchor-id="other-github-features">Other GitHub features</h3>
-<ul>
-<li><p>Sharing repository templates to get started quickly with good-quality standard project structure.</p></li>
-<li><p>Global collaboration and social networking. See how other people have built their projects, perhaps how others have approached something you want to do. You can invite others to look at your code and get feedback for making improvements.</p></li>
-<li><p>It’s not just for developers, it’s a great way of distributing files, including scripts to be run and it’s also great to have version control for standard documents.</p></li>
-</ul>
+<section id="github-and-the-nhs-so-far" class="level3">
+<h3 class="anchored" data-anchor-id="github-and-the-nhs-so-far">GitHub and the NHS so far</h3>
+<p>The <a href="https://nhsengland.github.io/open-health-statistics/">Open Source Healthcare Statistics</a> page shows how many public repositories there are from various healthcare organisations. It’s been growing quickly in recent years! They give links to all the repositories, if you’re interested in a browse (including <a href="https://github.com/NHSDigital">NHS Digital</a> and <a href="https://github.com/nhsengland">NHS England</a>). Of particular note, I think, among that list are the <strong>communities</strong> building around Open Source for healthcare professionals like the <a href="https://github.com/nhs-r-community">NHS R Community</a> and the <a href="https://github.com/nhs-pycom">NHS Python Community</a><a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>.</p>
+<p><strong>So, do you see the benefits of Open Code?</strong></p>
 
 
 </section>
+</section>
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>💡 You <em>did</em> notice you’re at a github.io address, right?<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>🔍 GitHub is mentioned <em>39</em> times in the review.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>That was a lot of links. Are you clicking any of them? Go check them out - they’re great! Go for it! Seriously, stop reading what I’m writing. I’m getting self-conscious now. Or you can go to the next page, I guess 🤷‍♂<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
 </section>
 
 </main> <!-- /main -->

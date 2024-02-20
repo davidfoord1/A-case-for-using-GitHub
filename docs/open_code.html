@@ -30,7 +30,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./references.html" rel="next">
 <link href="./index.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -101,19 +100,13 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">What is GitHub, anyway?</span></a>
+ <span class="menu-text">Why you should be using GitHub</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./open_code.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">A case for Open Code</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">References</span></a>
   </div>
 </li>
     </ul>
@@ -126,9 +119,15 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#why-publish-your-code" id="toc-why-publish-your-code" class="nav-link active" data-scroll-target="#why-publish-your-code">Why publish your code?</a></li>
-  <li><a href="#what-about-security" id="toc-what-about-security" class="nav-link" data-scroll-target="#what-about-security">What about security?</a></li>
-  <li><a href="#other" id="toc-other" class="nav-link" data-scroll-target="#other">Other</a></li>
+  <li><a href="#why-publish-your-code" id="toc-why-publish-your-code" class="nav-link active" data-scroll-target="#why-publish-your-code">Why publish your code?</a>
+  <ul class="collapse">
+  <li><a href="#again-there-is-a-great-deal-of-government-and-nhs-support" id="toc-again-there-is-a-great-deal-of-government-and-nhs-support" class="nav-link" data-scroll-target="#again-there-is-a-great-deal-of-government-and-nhs-support">Again, there is a great deal of government and NHS support</a></li>
+  </ul></li>
+  <li><a href="#addressing-security-concerns" id="toc-addressing-security-concerns" class="nav-link" data-scroll-target="#addressing-security-concerns">Addressing security concerns</a>
+  <ul class="collapse">
+  <li><a href="#be-clear-what-is-actually-sensitive-or-not" id="toc-be-clear-what-is-actually-sensitive-or-not" class="nav-link" data-scroll-target="#be-clear-what-is-actually-sensitive-or-not">Be clear what is actually sensitive or not</a></li>
+  <li><a href="#safe-sharing-specifics" id="toc-safe-sharing-specifics" class="nav-link" data-scroll-target="#safe-sharing-specifics">Safe sharing specifics</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -152,23 +151,34 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<p>I’ve mentioned openly sharing code as a part of Reproducible Analytical Pipelines, several times already, but I suspect it’s the point to be met with most resistance and so I want to dive into it a bit more.</p>
 <section id="why-publish-your-code" class="level2">
 <h2 class="anchored" data-anchor-id="why-publish-your-code">Why publish your code?</h2>
-<p>From the <a href="https://nhsdigital.github.io/rap-community-of-practice/implementing_RAP/how-to-publish-your-code-in-the-open/" title="How to Publish your Code in the Open">NHS Digital RAP Community of practice</a>:</p>
-<blockquote class="blockquote">
-<p>The Government’s <a href="https://www.gov.uk/service-manual/service-standard">Digital Service Standard</a> 12th principle states that all publicly funded code should be open, reusable and available under appropriate licences. The main benefits of publishing your code are:</p>
+<p>Put from the perspective of good practice as the default, can you justify <em>not</em> publishing your code? Here are the main benefits of Open Code:</p>
 <ul>
-<li><p>It increases transparency on NHS work. This can include publication/dashboard methodologies, but also code ownership.</p></li>
-<li><p>It increases collaboration and knowledge sharing across cross-department teams, external users and developers. No time is wasted on requesting permissions or access to code repositories.</p></li>
-<li><p>Easier to share and align on standards across the health sector.</p></li>
-<li><p>Knowing that your code will be published will lead to your overall code health increasing as analysts and developers will take greater care in ensuring best coding practices and standards are applied.</p></li>
-<li><p>Reduce burden by sharing and reusing code. Internal and external users can learn from your code repositories and templates, and apply it to their work or personal projects.</p></li>
+<li><strong>It’s more efficient</strong> - Sharing and reusing code reduces the duplication and burden of work. Changes may be needed for specific audiences, but how many of the same data tasks are being carried out again and again across national, regional and local healthcare teams?</li>
+<li><strong>It encourages good practice</strong> - If you know others can see your work you’re more likely to care about it being good work, and thus end up with a healthier and more maintainable code base.</li>
+<li><strong>It’s more transparent</strong> - If you’re publicly-funded and working with the public’s data, why shouldn’t your methodologies be available publicly for others to check, reuse and build on?</li>
+<li><strong>It’s good for collaboration</strong> - we can learn from each other, both across departments and from external users.</li>
 </ul>
-</blockquote>
+<p><strong>But Open Code isn’t beneficial to me personally!</strong></p>
+<p>Incorrect! Sorry, I just really want to reiterate those points. If you write something to be reproducible by someone else, it’s going to be more reproducible by <em>you</em> in the future, or there may be less need for you to do it. If you open yourself to, yes - criticism, you open yourself to help and improvement. If you engage with the open-source community you can and will learn, challenge and teach, growing your wealth of skills, knowledge and experiences.</p>
+<section id="again-there-is-a-great-deal-of-government-and-nhs-support" class="level3">
+<h3 class="anchored" data-anchor-id="again-there-is-a-great-deal-of-government-and-nhs-support">Again, there is a great deal of government and NHS support</h3>
+<p>None of that came from just me, I was mostly just ticking off the points made by the NHS Digital RAP Community of practice on <a href="https://nhsdigital.github.io/rap-community-of-practice/implementing_RAP/how-to-publish-your-code-in-the-open/" title="How to Publish your Code in the Open">How to Publish your Code in the Open</a>.</p>
+<p>The <a href="https://www.gov.uk/service-manual/service-standard">Government’s Digital Service Standard</a> (and therefore the NHS Digital Service Standard’s) 12th principle states that all publicly funded code should be open, reusable and available under appropriate licences.</p>
 </section>
-<section id="what-about-security" class="level2">
-<h2 class="anchored" data-anchor-id="what-about-security">What about security?</h2>
-<p><a href="https://www.gov.uk/government/publications/open-source-guidance/when-code-should-be-open-or-closed">Government guidance on when code should be open or closed</a>:</p>
+</section>
+<section id="addressing-security-concerns" class="level2">
+<h2 class="anchored" data-anchor-id="addressing-security-concerns">Addressing security concerns</h2>
+<p>You can choose what files get included in your GitHub repository. We <em>choose</em> to share the code and documentation but <strong>none of the data</strong> or other sensitive info like API keys.</p>
+<section id="be-clear-what-is-actually-sensitive-or-not" class="level3">
+<h3 class="anchored" data-anchor-id="be-clear-what-is-actually-sensitive-or-not">Be clear what is actually sensitive or not</h3>
+<p>I’m just going to be copying here because it’s really well put by the <a href="https://www.gov.uk/service-manual/technology/making-source-code-open-and-reusable" title="Making source doe open and reusable">GOV.UK Service Manual</a>:</p>
+<blockquote class="blockquote">
+<p>There are very few examples of code that must not be published in the open.</p>
+</blockquote>
+<p>A helpful quick list is provided by the <a href="https://www.gov.uk/government/publications/open-source-guidance/when-code-should-be-open-or-closed">government cyber security guidance</a>:</p>
 <blockquote class="blockquote">
 <p><strong>Closed code</strong></p>
 <p>You should keep some data and code closed, including:</p>
@@ -188,11 +198,28 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 </blockquote>
 </section>
-<section id="other" class="level2">
-<h2 class="anchored" data-anchor-id="other">Other</h2>
-<p><a href="https://datasciencecampus.github.io/coding-in-the-open/">Office of National Statistics guidance on Coding in the Open</a> reiterates the NHS Digital position.</p>
+<section id="safe-sharing-specifics" class="level3">
+<h3 class="anchored" data-anchor-id="safe-sharing-specifics">Safe sharing specifics</h3>
+<p>Here’s a couple of details if you’re wondering how managing files safely can work.</p>
+<section id="ignoring-files-in-git" class="level4">
+<h4 class="anchored" data-anchor-id="ignoring-files-in-git">Ignoring files in Git</h4>
+<p>You include a <code>.gitignore</code> file in your project that <a href="https://git-scm.com/docs/gitignore" title="gitignore documentation">specifies intentionally untracked files and folders to ignore</a>, so that you can include files in your project on your computer, but they don’t get put on the remote repository. It’s under your control, so yes you have responsibility here. As a simple example, include the following line in a <code>.gitignore</code> to ignore all <code>.csv</code> files, using the <code>*</code> wildcard:</p>
+<pre><code>*.csv</code></pre>
+</section>
+<section id="environment-variables" class="level4">
+<h4 class="anchored" data-anchor-id="environment-variables">Environment variables</h4>
+<p>A key piece of sensitive info are things like access keys and credentials. Unfortunately, sometimes we <em>do</em> have to write them down to make use of them. It’s important to make these don’t get shared, and one approach is to store them in environment variables.</p>
+<p>Create the necessary variables in an environment file, then write your main script that includes accessing and using those variables<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. Make sure the environment file is ignored by git, but do share the script. Document how to set up the environment variable, so that others can execute the code with their own keys/credentials.</p>
 
 
+</section>
+</section>
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>The R-curious should look into <code>.Renviron</code> files and <a href="https://rdrr.io/r/base/Sys.getenv.html"><code>Sys.getenv()</code></a>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
 </section>
 
 </main> <!-- /main -->
@@ -432,13 +459,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./index.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">What is GitHub, anyway?</span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Why you should be using GitHub</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./references.html" class="pagination-link">
-        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->

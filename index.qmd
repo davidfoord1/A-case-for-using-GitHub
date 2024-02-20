@@ -1,28 +1,38 @@
-A(nother) case for using GitHub, from the perspective of an NHS England Cancer analyst.
+# Why you should be using GitHub {.unnumbered}
 
-## What is GitHub, anyway? {.unnumbered}
+A(nother) case for using GitHub for data analysis projects, from the perspective of an NHS England data analyst. My team started to transition projects on to GitHub last year, and this is why I'm glad we did.
 
-[GitHub.com](https://github.com/) and GitHub are a suite of products centered around the **version control system** [Git](https://www.bing.com/ck/a?!&&p=d931a2ebfd59a00eJmltdHM9MTcwMTgyMDgwMCZpZ3VpZD0xYTFjOTJhOC00Y2I2LTZkZDctMGY1ZS04MDZkNGQwZDZjNzYmaW5zaWQ9NTUyNQ&ptn=3&ver=2&hsh=3&fclid=1a1c92a8-4cb6-6dd7-0f5e-806d4d0d6c76&psq=git&u=a1aHR0cHM6Ly9naXQtc2NtLmNvbS9kb3dubG9hZHM&ntb=1). It offers:
+::: callout-important
+## The Goal
 
--   A place to store and share projects (in repositories) with complete control over who has access. It's easy to download a copy of a project, make changes and upload a revision. It's a back-up on the cloud.
+Use a service like GitHub to share what you've done and how you've done it, so that you, your colleagues and others can repeat the process. Share your code and documentation, *not the data* or even the results (as they of course may be sensitive).
+:::
 
--   It keeps a full record of changes made to the repository, including who made them and when, great for recovery, audits or just understanding how the project changed over time.
+## What is GitHub, anyway?
 
--   When you make changes, save them and commit them to a repository, you can (and should) give a descriptive name to the change which makes it easy for others to understand what changes have been made.
+[GitHub](https://github.com/) is a suite of products centered around the **version control system** [Git](https://www.bing.com/ck/a?!&&p=d931a2ebfd59a00eJmltdHM9MTcwMTgyMDgwMCZpZ3VpZD0xYTFjOTJhOC00Y2I2LTZkZDctMGY1ZS04MDZkNGQwZDZjNzYmaW5zaWQ9NTUyNQ&ptn=3&ver=2&hsh=3&fclid=1a1c92a8-4cb6-6dd7-0f5e-806d4d0d6c76&psq=git&u=a1aHR0cHM6Ly9naXQtc2NtLmNvbS9kb3dubG9hZHM&ntb=1). It offers:
 
--   Git supports multiple branches of one project being worked on in parallel. You can work separately on features and combine them. By having a distinct final/publishing branch, say `main`, you can protect the quality and completeness of the output product.
+-   **A place to store and share projects**, in repositories with complete control over who has access. It's easy to download a copy of a project, make changes and upload a revision. It's a shared source-of-truth on the cloud.
 
--   A key feature of the GitHub workflow are **Pull Requests** and **Code Reviews**. When you're happy with a change and want it merged into the `main` branch, you can make a request for someone to pull/merge your own branch into `main`. This can then be peer reviewed by someone, who can add comments, request changes or approve and merge. This is really important, because it adds a natural step for communication and assurance into the process.
+-   **A record of changes made to the repository**, including who made them and when; great for recovery, audits or just understanding how the project changed over time. You name and describe changes so that it's easy to understand what's been done.
+
+-   **Multiple branches of one project being worked on in parallel**. You can work safely and separately on features and combine them. By having a distinct final/publishing branch (usually `main`), you can protect the quality and completeness of the output product.
+
+-   **Peer review in your regular workflow**. Pull Requests and Code Reviews are key features. When you're happy with a change you've made in a branch, you can make a request for your work to be pulled/merged into the `main` branch. This can then be reviewed by someone, who can add comments, request changes or approve and merge. This is really valuable, because it adds a natural step for feedback and quality assurance into the process.
+
+All of that is available for **FREE**, and that's not everything[^1], but hopefully it is enough to pique your interest.
+
+[^1]: 💡 You *did* notice you're at a github.io address, right?
 
 ### That sounds like a lot of extra steps just to save my work...
 
-Well, yes, it is. It's saving, but more deliberate, with more quality assurance built-in, records for recovery and audit, proper support for multiple branches of work. It is a longer process; it's a more thoughtful process; it's a better process. Well, no it's not even a longer process, it takes more time up front but saves a lot over the mid-to-long-term. I don't think I can stress enough how beneficial the extra steps are.
-
-I'm not going to go through every reason [why reproducible analytical pipeline are important](https://nhsdigital.github.io/rap-community-of-practice/introduction_to_RAP/why_RAP_is_important/), but quickly; the more manual steps like copy-pasting in a process there are, the more time it will take to complete, the more risk there will be for error, and the less scalable it will be for extending and repeating the process. It's good to automate as much as possible, and products like GitHub go hand-in-hand with tackling these issues:
+Well, yes, it is. It's saving, but more deliberate, with more quality assurance built-in, records for recovery and audit, proper support for multiple branches of work. It is a longer process; it's a more thoughtful process; it's a better process. In fact, it's not a longer process, it takes more time up front but saves a lot over the mid-to-long-term. I don't think I can stress enough how beneficial the extra steps are, particularly in making your work reproducible.
 
 ### GitHub for Reproducible Analytical Pipelines (RAP)
 
-From the NHS Digital [levels of RAP framework](https://nhsdigital.github.io/rap-community-of-practice/introduction_to_RAP/levels_of_RAP/), which sets out a list of requirements for making a good pipeline, look at the *baseline* points:
+As a summary of [why reproducible pipelines are important](https://nhsdigital.github.io/rap-community-of-practice/introduction_to_RAP/why_RAP_is_important/): the more manual steps like copy-pasting in a process there are, the more time it will take to complete, the more risk there will be for error, and the less scalable it will be for extending and repeating the process. It's good to automate as much as possible, and products like GitHub go hand-in-hand with tackling these issues:
+
+From the NHS Digital [levels of RAP framework](https://nhsdigital.github.io/rap-community-of-practice/introduction_to_RAP/levels_of_RAP/), which sets out a list of requirements for making a good pipeline, look at the *baseline* (bronze) points:
 
 > -   Code is version controlled (see [Git basics](https://nhsdigital.github.io/rap-community-of-practice/training_resources/git/introduction-to-git/) and [using Git collaboratively](https://nhsdigital.github.io/rap-community-of-practice/training_resources/git/using-git-collaboratively/) guides).
 >
@@ -38,21 +48,23 @@ From the NHS Digital [levels of RAP framework](https://nhsdigital.github.io/rap-
 
 ## That's great in theory, but what it's like in practice?
 
-My team started moving some projects on to GitHub a few months ago and I am so glad that we did.
+Like I said, I'm really glad the team I'm in started making this move -
 
--   Now we can safely collaborate on the same file, in ways that are not possible with OneDrive/SharePoint. It's easy to work on something in your own branch without worrying about messing the real thing up, and then it's easy to merge files and understand what's actually happening.
+-   Now we can collaborate much more safely, in ways that were not possible with our previous setup using OneDrive/SharePoint. It's easy to work on something in your own branch without worrying about messing the real thing up, and then it shows you the exact differences when you want to combine on them.
 
 -   Introducing **code review has been a boon for learning** in the team. We're not just getting things done well enough to work. We're getting feedback, we're improving, we're making things more maintainable. This comes from both getting your code reviewed and from doing the reviewing.
 
--   Code review has also managed to catch a few mistakes before they got moved into a final product.
+-   Code review has managed to catch a few mistakes before they got moved into building a project.
 
--   In a case where a change didn't work, we were able to simply able to revert it.
+-   In a case where a change didn't work in practice, we were able to revert it.
 
--   It has been quick and easy to transfer files to different people and different locations like remote desktops.
+-   It has been quick and easy to get code running for different people and on different locations like remote desktops.
+
+That being said, although the differences are clearly set out, conflicts can arise and resolving them scales in difficulty with the complexity of the changes. So, it's still generally recommended to have only one branch work on one file at a time.
 
 ### Getting to grips with the tools
 
-There was a bit of learning and setting up to do to get started, but plenty of guides on how to do it. Using Git in a command line app (like Git Bash for Windows) may seem a bit intimidating, but there are graphical user interface apps like GitHub Desktop which makes things easier. It is also commonly included in IDEs like RStudio, and packages like [{usethis}](https://usethis.r-lib.org/reference/index.html#git-and-github) for R.
+There was a bit of learning and setting up to do to get started, but plenty of guides on how to do it. There are lots of tools to potentially use, the most friendly being apps like [GitHub Desktop](https://desktop.github.com/), or perhaps the integrated functionality in development environments like [VSCode](https://code.visualstudio.com/docs/sourcecontrol/intro-to-git "Intro to Git in VSCode"). Best is to just pick one that seems comfortable to you, find the relevant documentation and guidance, and then run with it.
 
 Once you get the hang of if it, there is a fairly simple and consistent rhythm of creating feature branches, making/saving/committing changes to files, pulling from the main branch and pushing to the feature branch, before submitting for review.
 
@@ -62,36 +74,29 @@ When a commit is made the exact changes are recorded, which can be displayed in 
 
 ![Additions in GitHub Desktop](images/git_additions.PNG){fig-align="left" width="600"}
 
-## Further thoughts
+## The drive and support in government and the NHS
 
-### There is a lot of support for using Git!
+The [Goldacre review](https://www.gov.uk/government/publications/better-broader-safer-using-health-data-for-research-and-analysis/better-broader-safer-using-health-data-for-research-and-analysis) goes in to quite some (non-technical) detail on why reproducible pipelines are a great opportunity for improvement in NHS analytical work. It recommends the adoption of RAP practices as the default:
 
-The HM Treasury [Aqua Book](https://assets.publishing.service.gov.uk/media/5a7f3bb8e5274a2e87db49be/aqua_book_final_web.pdf "guidance on producing quality analysis for government") recommends version control as the most basic quality assurance activity appropriate even for simple analysis with low business risk (see section 4.1.13 onward). The Government Analysis Function's best practice guidance includes a [Guide to Version Control with Git](https://best-practice-and-impact.github.io/qa-of-code-guidance/version_control.html#) and a [Peer Review Guide](https://best-practice-and-impact.github.io/qa-of-code-guidance/version_control.html).
+> it is crucial that the core working practices, such as sharing code, are implemented as a norm throughout the system, because of the problems that closed working can create around quality, safety, usability, credibility, and review.
 
-Some examples of GitHub in use:
+The review stresses the importance of tools and services like GitHub[^2] to meet the minimum requirements of data pipelines being shared openly to anyone for review and re-use with an audit trail using version control.
 
--   [NHS England GitHub](https://github.com/nhsengland)
+[^2]: 🔍 GitHub is mentioned *39* times in the review.
 
--   [NHS Digital GitHub](https://github.com/nhsdigital)
+The same is said in many places, here are some others in additions to the the NHS Digital resources already shared:
 
--   [NHS UK GitHub](https://github.com/nhsuk)
+-   The [GOV.UK Service Manual](https://www.gov.uk/service-manual/technology/making-source-code-open-and-reusable "Making source code open and reusable") advises making code publicly available in an open internet source code repository.
 
--   [Government Digital Service](https://github.com/alphagov)
+-   The Government Analysis Function's best practice guidance includes a [Guide to Version Control with Git](https://best-practice-and-impact.github.io/qa-of-code-guidance/version_control.html#) and a [Peer Review Guide](https://best-practice-and-impact.github.io/qa-of-code-guidance/version_control.html).
 
--   [ONS GitHub](https://github.com/ONSdigital)
+- The Office of National Statistics [reiterates the NHS Digital position](https://datasciencecampus.github.io/coding-in-the-open/ "ONS Data Science Campus - Coding in the Open").
 
-### OneDrive is not the version control you're looking for
+### GitHub and the NHS so far
 
-Having files reliant on Microsoft OneDrive/Sharepoint syncing and version history is risky and makes me nervous. I've seen files be deleted at random fairly regularly.
+The [Open Source Healthcare Statistics](https://nhsengland.github.io/open-health-statistics/) page shows how many public repositories there are from various healthcare organisations. It's been growing quickly in recent years! They give links to all the repositories, if you're interested in a browse (including [NHS Digital](https://github.com/NHSDigital) and [NHS England](https://github.com/nhsengland)). Of particular note, I think, among that list are the **communities** building around Open Source for healthcare professionals like the [NHS R Community](https://github.com/nhs-r-community) and the [NHS Python Community](https://github.com/nhs-pycom)[^3]. 
 
-Writing code includes things like installing code packages, lots of small files to contribute to a project and OneDrive will try to sync them. It's not unusual to see it whirring away trying to process thousands of changes and painfully slowing things down. 
+**So, do you see the benefits of Open Code?**
 
-Autosave is great for emergency recovery on a crash, but the history is no good for more precise recovery and reversion. It does mean you don't have to worry about forgetting to save, but that's about as far as it goes, and as already discussed, deliberate and described changes are good practice.
+[^3]: That was a lot of links. Are you clicking any of them? Go check them out - they're great! Go for it! Seriously, stop reading what I'm writing. I'm getting self-conscious now. Or you can go to the next page, I guess 🤷‍♂
 
-### Other GitHub features
-
--   Sharing repository templates to get started quickly with good-quality standard project structure.
-
--   Global collaboration and social networking. See how other people have built their projects, perhaps how others have approached something you want to do. You can invite others to look at your code and get feedback for making improvements.
-
--   It's not just for developers, it's a great way of distributing files, including scripts to be run and it's also great to have version control for standard documents.
